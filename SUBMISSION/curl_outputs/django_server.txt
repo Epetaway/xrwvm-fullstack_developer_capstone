@@ -1,0 +1,6 @@
+=== Django Server Output ===
+[Paste your terminal output here showing:]
+- Migrations applied
+- Server starting message
+- Development server running at http://127.0.0.1:8000/
+- Quit the server with CONTROL-C message

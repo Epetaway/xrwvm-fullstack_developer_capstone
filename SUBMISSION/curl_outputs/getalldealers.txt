@@ -1,0 +1,5 @@
+=== cURL Command ===
+[Paste your cURL command here]
+
+=== Output ===
+[Paste the complete output here including headers and response]

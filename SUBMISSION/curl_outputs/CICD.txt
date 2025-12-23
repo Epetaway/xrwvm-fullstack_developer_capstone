@@ -1,0 +1,5 @@
+=== CI/CD Workflow Output ===
+[Paste your GitHub Actions workflow output here showing:]
+- All workflow steps
+- Success status
+- Build and deployment logs

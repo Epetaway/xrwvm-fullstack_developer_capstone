@@ -1,0 +1,4 @@
+No version is set for command python
+Consider adding one of the following versions in your config file at /Users/earlhickson/.tool-versions
+python 3.10.11
+python 3.12.6

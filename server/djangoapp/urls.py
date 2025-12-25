@@ -15,4 +15,22 @@ urlpatterns = [
     # path for logout
     path(route='logout', view=views.logout_user, name='logout'),
 
+    # path for getting all dealers
+    path(route='get_dealers', view=views.get_dealers, name='get_dealers'),
+
+    # path for getting dealers by state
+    path(route='get_dealers/<str:state>', view=views.get_dealers_by_state, name='get_dealers_by_state'),
+
+    # path for getting dealer details (match component's expected URL)
+    path(route='dealer/<int:dealer_id>', view=views.get_dealer_details, name='dealer'),
+
+    # path for getting dealer reviews (match component's expected URL)
+    path(route='reviews/dealer/<int:dealer_id>', view=views.get_dealer_reviews, name='dealer_reviews'),
+
+    # path for adding a review
+    path(route='add_review', view=views.add_review, name='add_review'),
+
+    # path for car make/model list used in PostReview dropdown
+    path(route='get_cars', view=views.get_cars, name='get_cars'),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

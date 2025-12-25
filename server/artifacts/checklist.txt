@@ -1,0 +1,27 @@
+[ ] README.md has project name details
+[ ] django_server (text): runserver output
+[ ] About.html URL shared
+[ ] Contact.html URL shared
+[ ] loginuser (text): curl + output
+[ ] logoutuser (text): curl + output
+[ ] Register.jsx URL shared
+[ ] getdealerreviews (text)
+[ ] getalldealers (text)
+[ ] getdealerbyid (text)
+[ ] getdealersbyState (text)
+[ ] admin_login (screenshot)
+[ ] admin_logout (screenshot)
+[ ] getallcarmakes (text)
+[ ] analyzereview (text)
+[ ] get_dealers (screenshot)
+[ ] get_dealers_loggedin (screenshot)
+[ ] dealersbystate (screenshot)
+[ ] dealer_id_reviews (screenshot)
+[ ] dealership_review_submission (screenshot)
+[ ] added_review (screenshot)
+[ ] CICD (text): GitHub Actions run output
+[ ] deploymentURL (text)
+[ ] deployed_landingpage (screenshot)
+[ ] deployed_loggedin (screenshot)
+[ ] deployed_dealer_detail (screenshot)
+[ ] deployed_add_review (screenshot)

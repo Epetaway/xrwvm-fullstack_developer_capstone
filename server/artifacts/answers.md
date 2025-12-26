@@ -4,7 +4,7 @@
 - Q1: Project title is "fullstack_developer_capstone" (Best Cars Dealership Portal).
 - Q3: GitHub repository URL: https://github.com/Epetaway/xrwvm-fullstack_developer_capstone
 - Q4: Contact page URL: http://127.0.0.1:8000/contact/
-- Q23: Deployment URL is still local (http://localhost:8000); replace with the OpenShift route once deployed and update deploymentURL.txt.
+- Q23: Deployment URL: http://169.47.218.92:8000 (OpenShift route, also in deploymentURL.txt)
 
 ## API cURL artifacts
 - Q5: Login cURL and output → server/artifacts/loginuser.txt

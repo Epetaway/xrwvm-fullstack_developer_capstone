@@ -30,6 +30,6 @@ response = login_user(request)
 
 print("=== MODULE 2: USER MANAGEMENT - LOGIN TEST ===")
 print(f"Status Code: {response.status_code}")
-print(f"Response Content:")
+print("Response Content:")
 print(response.content.decode())
 print("=" * 50)

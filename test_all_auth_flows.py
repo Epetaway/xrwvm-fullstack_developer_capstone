@@ -65,12 +65,12 @@ response = client.post(
 )
 
 register_result = json.loads(response.content.decode())
-print(f"POST /djangoapp/register")
+print("POST /djangoapp/register")
 print(f"Request: {json.dumps(register_payload)}")
 print(f"Status: {response.status_code}")
 print(f"Response: {json.dumps(register_result)}")
 
-if register_result.get('status') == True:
+if register_result.get('status') is True:
     print("✓ REGISTER TEST PASSED")
     # Verify user exists in database
     try:
@@ -88,7 +88,7 @@ print("-" * 60)
 response = client.get('/djangoapp/logout')
 logout_result = json.loads(response.content.decode())
 
-print(f"GET /djangoapp/logout")
+print("GET /djangoapp/logout")
 print(f"Status: {response.status_code}")
 print(f"Response: {json.dumps(logout_result)}")
 
@@ -116,12 +116,13 @@ response = client.post(
 )
 
 dup_result = json.loads(response.content.decode())
-print(f"POST /djangoapp/register (duplicate)")
-print(f"Request username: admin")
+print("POST /djangoapp/register (duplicate)")
+print("Request username: admin")
 print(f"Status: {response.status_code}")
 print(f"Response: {json.dumps(dup_result)}")
 
-if dup_result.get('status') == False and 'Already Registered' in dup_result.get('error', ''):
+if (dup_result.get('status') is False and
+        'Already Registered' in dup_result.get('error', '')):
     print("✓ DUPLICATE CHECK TEST PASSED")
 else:
     print("✗ DUPLICATE CHECK TEST FAILED")

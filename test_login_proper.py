@@ -3,13 +3,12 @@ import os
 import sys
 import django
 import json
+from django.test import Client
+from django.contrib.auth.models import User
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djangoproj.settings')
 sys.path.insert(0, '/Users/earlhickson/Development/best-cars-capstone/server')
 django.setup()
-
-from django.test import Client
-from django.contrib.auth.models import User
 
 # Verify admin user exists
 try:
@@ -37,9 +36,9 @@ response = client.post(
 )
 
 print("\n=== MODULE 2: USER MANAGEMENT - LOGIN TEST ===")
-print(f"Endpoint: POST /djangoapp/login")
+print("Endpoint: POST /djangoapp/login")
 print(f"Status Code: {response.status_code}")
-print(f"Response Content:")
+print("Response Content:")
 print(response.content.decode())
 print("=" * 50)
 

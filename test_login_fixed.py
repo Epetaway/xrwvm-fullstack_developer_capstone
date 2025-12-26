@@ -49,8 +49,8 @@ try:
     print(json.dumps(response_data, indent=2))
     print()
 
-    if (response.status_code == 200 and
-            response_data.get('status') == 'Authenticated'):
+    if (response.status_code == 200
+            and response_data.get('status') == 'Authenticated'):
         print("=" * 50)
         print("✓ LOGIN SUCCESSFUL!")
         print(f"  Username: {response_data.get('userName')}")

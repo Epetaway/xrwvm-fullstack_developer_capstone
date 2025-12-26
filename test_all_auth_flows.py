@@ -123,8 +123,8 @@ print("Request username: admin")
 print(f"Status: {response.status_code}")
 print(f"Response: {json.dumps(dup_result)}")
 
-if (dup_result.get('status') is False and
-        'Already Registered' in dup_result.get('error', '')):
+if (dup_result.get('status') is False
+        and 'Already Registered' in dup_result.get('error', '')):
     print("✓ DUPLICATE CHECK TEST PASSED")
 else:
     print("✗ DUPLICATE CHECK TEST FAILED")

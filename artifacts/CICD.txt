@@ -1,0 +1,72 @@
+=== GitHub Actions Workflow Run: Lint Code ===
+Run ID: 20513262962
+Status: FAILED (Exit Code 1)
+Triggered: push to main
+Date: 2025-12-26
+
+JOBS SUMMARY:
+==============
+
+1. Lint JavaScript Files (ID: 58936980120)
+   Duration: 12s
+   Status: FAILED
+   
+   Steps:
+   ✓ Set up job
+   ✓ Checkout Repository
+   ✓ Install Node.js
+   ✓ Install JSHint
+   ✗ Run Linter
+   - Post Install Node.js
+   ✓ Post Checkout Repository
+   ✓ Complete job
+   
+   Error:
+   ./server/database/inventory.js: line 1, col 9, 'Int32' is defined but never used.
+   Process completed with exit code 1.
+
+2. Lint Python Files (ID: 58936980126)
+   Duration: 7s
+   Status: FAILED
+   
+   Steps:
+   ✓ Set up job
+   ✓ Checkout Repository
+   ✓ Set up Python
+   ✓ Install dependencies
+   ✓ Print working directory
+   ✗ Run Linter
+   - Post Set up Python
+   ✓ Post Checkout Repository
+   ✓ Complete job
+   
+   Errors Found: 48 linting issues
+   - Module imports not at top of file (E402)
+   - F-strings without placeholders (F541)
+   - Lines too long (E501)
+   - Unused imports (F401)
+   - Blank lines with whitespace (W293)
+   - Comparison style issues (E712)
+   Process completed with exit code 1.
+
+FAILED FILES:
+=============
+Python:
+  - create_superuser.py
+  - test_login_proper.py
+  - test_all_auth_flows.py
+  - test_login_api.py
+  - test_login_direct.py
+  - test_login_fixed.py
+  - server/djangoapp/urls.py
+  - server/djangoapp/views.py
+  - server/djangoproj/settings.py
+  - server/djangoproj/urls.py
+
+JavaScript:
+  - server/database/inventory.js
+
+Status: ❌ WORKFLOW FAILED
+Total Issues: 49 (48 Python + 1 JavaScript)
+
+View Run: https://github.com/Epetaway/xrwvm-fullstack_developer_capstone/actions/runs/20513262962

@@ -3,12 +3,11 @@ import os
 import sys
 import django
 import json
+from django.test import Client
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djangoproj.settings')
 sys.path.insert(0, '/Users/earlhickson/Development/best-cars-capstone/server')
 django.setup()
-
-from django.test import Client
 
 # Create test client
 client = Client()

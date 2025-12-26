@@ -9,14 +9,13 @@ import os
 import sys
 import django
 import json
+from django.test import Client
+from django.contrib.auth.models import User
 
 # Setup Django environment
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djangoproj.settings')
 sys.path.insert(0, '/Users/earlhickson/Development/best-cars-capstone/server')
 django.setup()
-
-from django.test import Client
-from django.contrib.auth.models import User
 
 print("=" * 60)
 print("MODULE 2: USER MANAGEMENT - COMPLETE AUTH FLOW TEST")
@@ -37,7 +36,7 @@ response = client.post(
 )
 
 login_result = json.loads(response.content.decode())
-print(f"POST /djangoapp/login")
+print("POST /djangoapp/login")
 print(f"Request: {json.dumps(login_payload)}")
 print(f"Status: {response.status_code}")
 print(f"Response: {json.dumps(login_result)}")

@@ -3,14 +3,12 @@ import os
 import sys
 import django
 import json
+from django.test import RequestFactory
+from djangoapp.views import login_user
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djangoproj.settings')
 sys.path.insert(0, '/Users/earlhickson/Development/best-cars-capstone/server')
 django.setup()
-
-from django.test import RequestFactory
-from django.contrib.auth.models import User
-from djangoapp.views import login_user
 
 # Create a request factory
 factory = RequestFactory()

@@ -5,9 +5,11 @@ exclude =
     __pycache__,
     .venv,
     venv,
-    server/,
+    ./server,
     migrations/,
     .github/,
     node_modules/
+ignore = E501, W391
 per-file-ignores =
     __init__.py:F401
+

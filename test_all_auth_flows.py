@@ -75,7 +75,9 @@ if register_result.get('status') is True:
     # Verify user exists in database
     try:
         new_user = User.objects.get(username='testuser2025')
-        print(f"✓ User created in database: {new_user.username} ({new_user.email})")
+        user_msg = f"✓ User created in database: {new_user.username} "
+        user_msg += f"({new_user.email})"
+        print(user_msg)
     except User.DoesNotExist:
         print("✗ User not found in database!")
 else:

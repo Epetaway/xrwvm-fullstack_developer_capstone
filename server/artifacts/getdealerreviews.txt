@@ -1,0 +1,97 @@
+curl http://127.0.0.1:8000/djangoapp/reviews/dealer/29
+{
+    "status": 200,
+    "reviews": [
+        {
+            "_id": "694d81ffdb2ec4c63203d9c3",
+            "id": 3,
+            "name": "Lion Reames",
+            "dealership": 29,
+            "review": "Expanded global groupware",
+            "purchase": true,
+            "purchase_date": "10/20/2020",
+            "car_make": "Mazda",
+            "car_model": "MX-5",
+            "car_year": 2003,
+            "__v": 0
+        },
+        {
+            "_id": "694d93acdb2ec4c63203d9f8",
+            "id": 51,
+            "name": "Test User",
+            "dealership": 29,
+            "review": "Great service",
+            "purchase": true,
+            "purchase_date": "2023-10-01",
+            "car_make": "Mazda",
+            "car_model": "MX-5",
+            "car_year": 2003,
+            "__v": 0
+        },
+        {
+            "_id": "694d98eedb2ec4c63203da14",
+            "id": 52,
+            "name": "Test User",
+            "dealership": 29,
+            "review": "Testing review posting",
+            "purchase": true,
+            "purchase_date": "2023-10-15",
+            "car_make": "Toyota",
+            "car_model": "Camry",
+            "car_year": 2020,
+            "__v": 0
+        },
+        {
+            "_id": "694d98f2db2ec4c63203da17",
+            "id": 53,
+            "name": "Test User",
+            "dealership": 29,
+            "review": "Testing review posting",
+            "purchase": true,
+            "purchase_date": "2023-10-15",
+            "car_make": "Toyota",
+            "car_model": "Camry",
+            "car_year": 2020,
+            "__v": 0
+        },
+        {
+            "_id": "694d9e35db2ec4c63203da1d",
+            "id": 54,
+            "name": "Test User",
+            "dealership": 29,
+            "review": "This dealership was excellent!",
+            "purchase": true,
+            "purchase_date": "2023-12-01",
+            "car_make": "Toyota",
+            "car_model": "Camry",
+            "car_year": 2022,
+            "__v": 0
+        },
+        {
+            "_id": "694da070db2ec4c63203da24",
+            "id": 55,
+            "name": "Test",
+            "dealership": 29,
+            "review": "Great!",
+            "purchase": true,
+            "purchase_date": "2023-12-01",
+            "car_make": "Toyota",
+            "car_model": "Camry",
+            "car_year": 2022,
+            "__v": 0
+        },
+        {
+            "_id": "694da8fadb2ec4c63203da2b",
+            "id": 56,
+            "name": "Test User",
+            "dealership": 29,
+            "review": "Fantastic services",
+            "purchase": true,
+            "purchase_date": "2023-12-20",
+            "car_make": "Toyota",
+            "car_model": "Camry",
+            "car_year": 2022,
+            "__v": 0
+        }
+    ]
+}

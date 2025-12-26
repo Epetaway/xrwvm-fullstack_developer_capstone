@@ -1,1 +1,19 @@
-{"status": 200, "dealer": [{"_id": "694d81ffdb2ec4c63203d9aa", "id": 29, "city": "San Francisco", "state": "California", "address": "9 Harper Circle", "zip": "94110", "lat": "37.7509", "long": "-122.4153", "short_name": "Fix San", "full_name": "Fix San Car Dealership", "__v": 0}]}
+curl http://127.0.0.1:8000/djangoapp/dealer/29
+{
+    "status": 200,
+    "dealer": [
+        {
+            "_id": "694d81ffdb2ec4c63203d9aa",
+            "id": 29,
+            "city": "San Francisco",
+            "state": "California",
+            "address": "9 Harper Circle",
+            "zip": "94110",
+            "lat": "37.7509",
+            "long": "-122.4153",
+            "short_name": "Fix San",
+            "full_name": "Fix San Car Dealership",
+            "__v": 0
+        }
+    ]
+}

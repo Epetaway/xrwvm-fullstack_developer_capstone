@@ -1,0 +1,165 @@
+{
+  "roles": [
+    {
+      "id": "frontend-developer",
+      "title": "Frontend Developer",
+      "description": "Specializes in building user interfaces and client-side applications",
+      "requiredSkills": [
+        "html",
+        "css",
+        "javascript",
+        "react",
+        "responsive-design",
+        "git",
+        "rest-api-integration"
+      ],
+      "recommendedCourses": [
+        "course-03",
+        "course-04",
+        "course-05"
+      ],
+      "careerPath": [
+        "Junior Frontend Developer",
+        "Frontend Developer",
+        "Senior Frontend Developer",
+        "Frontend Architect"
+      ]
+    },
+    {
+      "id": "backend-developer",
+      "title": "Backend Developer",
+      "description": "Focuses on server-side logic, databases, and API development",
+      "requiredSkills": [
+        "python",
+        "nodejs",
+        "django",
+        "express",
+        "postgresql",
+        "mongodb",
+        "rest-api",
+        "authentication",
+        "git"
+      ],
+      "recommendedCourses": [
+        "course-06",
+        "course-07",
+        "course-09"
+      ],
+      "careerPath": [
+        "Junior Backend Developer",
+        "Backend Developer",
+        "Senior Backend Developer",
+        "Backend Architect"
+      ]
+    },
+    {
+      "id": "full-stack-developer",
+      "title": "Full-Stack Developer",
+      "description": "Works on both frontend and backend, building complete web applications",
+      "requiredSkills": [
+        "html",
+        "css",
+        "javascript",
+        "react",
+        "nodejs",
+        "python",
+        "django",
+        "postgresql",
+        "rest-api",
+        "git",
+        "docker"
+      ],
+      "recommendedCourses": [
+        "course-03",
+        "course-04",
+        "course-05",
+        "course-06",
+        "course-09",
+        "course-12"
+      ],
+      "careerPath": [
+        "Junior Full-Stack Developer",
+        "Full-Stack Developer",
+        "Senior Full-Stack Developer",
+        "Technical Lead"
+      ]
+    },
+    {
+      "id": "cloud-developer",
+      "title": "Cloud Developer",
+      "description": "Develops and deploys applications on cloud platforms",
+      "requiredSkills": [
+        "cloud-computing",
+        "docker",
+        "kubernetes",
+        "ci-cd",
+        "microservices",
+        "serverless",
+        "python",
+        "nodejs"
+      ],
+      "recommendedCourses": [
+        "course-02",
+        "course-10",
+        "course-11"
+      ],
+      "careerPath": [
+        "Junior Cloud Developer",
+        "Cloud Developer",
+        "Senior Cloud Developer",
+        "Cloud Architect"
+      ]
+    },
+    {
+      "id": "devops-engineer",
+      "title": "DevOps Engineer",
+      "description": "Manages infrastructure, CI/CD pipelines, and deployment automation",
+      "requiredSkills": [
+        "docker",
+        "kubernetes",
+        "ci-cd",
+        "git",
+        "cloud-computing",
+        "linux",
+        "scripting"
+      ],
+      "recommendedCourses": [
+        "course-02",
+        "course-04",
+        "course-10",
+        "course-11"
+      ],
+      "careerPath": [
+        "Junior DevOps Engineer",
+        "DevOps Engineer",
+        "Senior DevOps Engineer",
+        "SRE (Site Reliability Engineer)"
+      ]
+    },
+    {
+      "id": "ai-ml-developer",
+      "title": "AI/ML Developer",
+      "description": "Builds AI-powered applications and integrates machine learning models",
+      "requiredSkills": [
+        "python",
+        "machine-learning",
+        "data-science",
+        "flask",
+        "rest-api",
+        "numpy",
+        "pandas"
+      ],
+      "recommendedCourses": [
+        "course-07",
+        "course-08",
+        "course-14"
+      ],
+      "careerPath": [
+        "Junior ML Engineer",
+        "ML Engineer",
+        "Senior ML Engineer",
+        "ML Architect"
+      ]
+    }
+  ]
+}

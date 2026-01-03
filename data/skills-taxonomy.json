@@ -1,0 +1,212 @@
+{
+  "skills": [
+    {
+      "id": "html",
+      "name": "HTML",
+      "category": "frontend",
+      "aliases": ["HTML5", "HyperText Markup Language"],
+      "relatedCourses": ["course-03"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "category": "frontend",
+      "aliases": ["CSS3", "Cascading Style Sheets", "Styling"],
+      "relatedCourses": ["course-03"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "category": "frontend",
+      "aliases": ["JS", "ECMAScript", "ES6", "ES2015"],
+      "relatedCourses": ["course-03", "course-05", "course-06"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "category": "frontend",
+      "aliases": ["ReactJS", "React.js"],
+      "relatedCourses": ["course-05", "course-12"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "category": "backend",
+      "aliases": ["Node", "NodeJS"],
+      "relatedCourses": ["course-06"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "express",
+      "name": "Express.js",
+      "category": "backend",
+      "aliases": ["Express", "ExpressJS"],
+      "relatedCourses": ["course-06"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "category": "backend",
+      "aliases": ["Python3", "Python 3"],
+      "relatedCourses": ["course-07", "course-08", "course-09"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "django",
+      "name": "Django",
+      "category": "backend",
+      "aliases": ["Django Framework"],
+      "relatedCourses": ["course-09", "course-12"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "flask",
+      "name": "Flask",
+      "category": "backend",
+      "aliases": ["Flask Framework"],
+      "relatedCourses": ["course-08"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "category": "tools",
+      "aliases": ["Version Control", "Git VCS"],
+      "relatedCourses": ["course-04"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "category": "tools",
+      "aliases": ["GitHub.com"],
+      "relatedCourses": ["course-04"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "category": "devops",
+      "aliases": ["Containerization", "Containers"],
+      "relatedCourses": ["course-10", "course-12"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "category": "devops",
+      "aliases": ["K8s", "Container Orchestration"],
+      "relatedCourses": ["course-10", "course-12"],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "openshift",
+      "name": "OpenShift",
+      "category": "devops",
+      "aliases": ["Red Hat OpenShift"],
+      "relatedCourses": ["course-10", "course-12"],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "category": "database",
+      "aliases": ["Postgres", "psql"],
+      "relatedCourses": ["course-09"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "category": "database",
+      "aliases": ["Mongo", "NoSQL"],
+      "relatedCourses": ["course-06"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "category": "database",
+      "aliases": ["Structured Query Language", "Database Queries"],
+      "relatedCourses": ["course-09"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "rest-api",
+      "name": "REST API",
+      "category": "backend",
+      "aliases": ["RESTful API", "REST", "API Development"],
+      "relatedCourses": ["course-06", "course-09", "course-12"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "microservices",
+      "name": "Microservices",
+      "category": "architecture",
+      "aliases": ["Microservice Architecture"],
+      "relatedCourses": ["course-11"],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "serverless",
+      "name": "Serverless",
+      "category": "architecture",
+      "aliases": ["Serverless Computing", "FaaS"],
+      "relatedCourses": ["course-11"],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "cloud-computing",
+      "name": "Cloud Computing",
+      "category": "infrastructure",
+      "aliases": ["Cloud", "Cloud Platforms"],
+      "relatedCourses": ["course-02"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "ci-cd",
+      "name": "CI/CD",
+      "category": "devops",
+      "aliases": ["Continuous Integration", "Continuous Deployment", "GitHub Actions"],
+      "relatedCourses": ["course-10", "course-12"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "machine-learning",
+      "name": "Machine Learning",
+      "category": "ai",
+      "aliases": ["ML", "AI"],
+      "relatedCourses": ["course-07", "course-08"],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "data-science",
+      "name": "Data Science",
+      "category": "ai",
+      "aliases": ["Data Analysis"],
+      "relatedCourses": ["course-07"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "authentication",
+      "name": "Authentication",
+      "category": "security",
+      "aliases": ["Auth", "User Authentication", "Login"],
+      "relatedCourses": ["course-09", "course-12"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "responsive-design",
+      "name": "Responsive Design",
+      "category": "frontend",
+      "aliases": ["Mobile-First", "Responsive Web Design"],
+      "relatedCourses": ["course-03", "course-05"],
+      "difficulty": "intermediate"
+    }
+  ]
+}

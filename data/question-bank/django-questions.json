@@ -1,0 +1,27 @@
+{
+  "skill": "django",
+  "difficulty": "intermediate",
+  "questions": [
+    {
+      "id": "django-001",
+      "question": "Explain Django's MTV pattern.",
+      "answer": "MTV stands for Model-Template-View. Models define database structure using Python classes, Templates handle presentation with Django template language, and Views contain business logic that processes requests and returns responses. This is Django's variant of the MVC pattern, where Django's View corresponds to MVC's Controller, and Django's Template corresponds to MVC's View.",
+      "source": "kb/course-12-full-stack-application-development-capstone-project/cheatsheets/interview.md#Q4",
+      "tags": ["django", "architecture", "mtv", "mvc"]
+    },
+    {
+      "id": "django-002",
+      "question": "How does Django's ORM prevent SQL injection?",
+      "answer": "Django's ORM automatically parameterizes queries, separating SQL structure from user data. Instead of string concatenation, the ORM uses prepared statements where user input is treated as data, not executable code. For example, `User.objects.filter(username=user_input)` is safe, while raw SQL like `f\"SELECT * FROM users WHERE username='{user_input}'\"` is vulnerable to SQL injection.",
+      "source": "kb/course-12-full-stack-application-development-capstone-project/modules/module-02.md#Mini-Quiz",
+      "tags": ["django", "orm", "security", "sql-injection"]
+    },
+    {
+      "id": "django-003",
+      "question": "What are database migrations in Django and why are they important?",
+      "answer": "Migrations are Django's way of propagating model changes to the database schema. They are Python files that describe database changes, tracked in version control. Migrations allow teams to sync database schemas, enable rollback capability, and provide automatic schema updates during deployment. Use `makemigrations` to create migrations and `migrate` to apply them.",
+      "source": "kb/course-12-full-stack-application-development-capstone-project/cheatsheets/interview.md#Q7",
+      "tags": ["django", "migrations", "database", "schema"]
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "courses": [
+    {
+      "courseId": "course-01",
+      "title": "Introduction to Software Engineering",
+      "skills": ["software-engineering", "sdlc", "agile", "git"],
+      "modules": {
+        "module-01": {
+          "title": "Software Engineering Basics",
+          "kbPaths": [
+            "kb/course-01-introduction-to-software-engineering/modules/module-01.md",
+            "kb/course-01-introduction-to-software-engineering/cheatsheets/commands.md"
+          ],
+          "skills": ["software-engineering", "sdlc"]
+        }
+      }
+    },
+    {
+      "courseId": "course-02",
+      "title": "Introduction to Cloud Computing",
+      "skills": ["cloud-computing", "iaas", "paas", "saas"],
+      "modules": {
+        "module-01": {
+          "title": "Cloud Fundamentals",
+          "kbPaths": [
+            "kb/course-02-introduction-to-cloud-computing/modules/module-01.md"
+          ],
+          "skills": ["cloud-computing"]
+        }
+      }
+    },
+    {
+      "courseId": "course-03",
+      "title": "Introduction to HTML, CSS, and JavaScript",
+      "skills": ["html", "css", "javascript", "dom"],
+      "modules": {
+        "module-01": {
+          "title": "HTML Basics",
+          "kbPaths": [
+            "kb/course-03-introduction-to-html-css-javascript/modules/module-01.md"
+          ],
+          "skills": ["html"]
+        },
+        "module-02": {
+          "title": "CSS Styling",
+          "kbPaths": [
+            "kb/course-03-introduction-to-html-css-javascript/modules/module-02.md"
+          ],
+          "skills": ["css", "responsive-design"]
+        },
+        "module-03": {
+          "title": "JavaScript Programming",
+          "kbPaths": [
+            "kb/course-03-introduction-to-html-css-javascript/modules/module-03.md"
+          ],
+          "skills": ["javascript"]
+        }
+      }
+    },
+    {
+      "courseId": "course-04",
+      "title": "Getting Started with Git and GitHub",
+      "skills": ["git", "github", "version-control"],
+      "modules": {
+        "module-01": {
+          "title": "Git Basics",
+          "kbPaths": [
+            "kb/course-04-getting-started-with-git-and-github/modules/module-01.md",
+            "kb/course-04-getting-started-with-git-and-github/cheatsheets/commands.md"
+          ],
+          "skills": ["git"]
+        }
+      }
+    },
+    {
+      "courseId": "course-05",
+      "title": "Developing Front-End Apps with React",
+      "skills": ["react", "jsx", "hooks", "routing", "state-management"],
+      "modules": {
+        "module-01": {
+          "title": "React Fundamentals",
+          "kbPaths": [
+            "kb/course-05-developing-front-end-apps-with-react/modules/module-01.md"
+          ],
+          "skills": ["react", "jsx"]
+        },
+        "module-02": {
+          "title": "Components and Props",
+          "kbPaths": [
+            "kb/course-05-developing-front-end-apps-with-react/modules/module-02.md"
+          ],
+          "skills": ["react"]
+        },
+        "module-03": {
+          "title": "State and Hooks",
+          "kbPaths": [
+            "kb/course-05-developing-front-end-apps-with-react/modules/module-03.md"
+          ],
+          "skills": ["hooks", "state-management"]
+        },
+        "module-04": {
+          "title": "Routing",
+          "kbPaths": [
+            "kb/course-05-developing-front-end-apps-with-react/modules/module-04.md"
+          ],
+          "skills": ["routing"]
+        }
+      }
+    },
+    {
+      "courseId": "course-06",
+      "title": "Developing Back-End Apps with Node.js and Express",
+      "skills": ["nodejs", "express", "rest-api", "mongodb"],
+      "modules": {
+        "module-01": {
+          "title": "Node.js Basics",
+          "kbPaths": [
+            "kb/course-06-developing-back-end-apps-with-nodejs-and-express/modules/module-01.md"
+          ],
+          "skills": ["nodejs"]
+        },
+        "module-02": {
+          "title": "Express Framework",
+          "kbPaths": [
+            "kb/course-06-developing-back-end-apps-with-nodejs-and-express/modules/module-02.md"
+          ],
+          "skills": ["express", "rest-api"]
+        }
+      }
+    },
+    {
+      "courseId": "course-07",
+      "title": "Python for Data Science, AI, and Development",
+      "skills": ["python", "numpy", "pandas", "data-science"],
+      "modules": {
+        "module-01": {
+          "title": "Python Fundamentals",
+          "kbPaths": [
+            "kb/course-07-python-for-data-science-ai-and-development/modules/module-01.md"
+          ],
+          "skills": ["python"]
+        }
+      }
+    },
+    {
+      "courseId": "course-08",
+      "title": "Developing AI Applications with Python and Flask",
+      "skills": ["python", "flask", "machine-learning", "rest-api"],
+      "modules": {
+        "module-01": {
+          "title": "Flask Basics",
+          "kbPaths": [
+            "kb/course-08-developing-ai-applications-with-python-and-flask/modules/module-01.md"
+          ],
+          "skills": ["flask"]
+        }
+      }
+    },
+    {
+      "courseId": "course-09",
+      "title": "Django Application Development with SQL and Databases",
+      "skills": ["django", "python", "sql", "postgresql", "orm"],
+      "modules": {
+        "module-01": {
+          "title": "Django Basics",
+          "kbPaths": [
+            "kb/course-09-django-application-development-with-sql-and-databases/modules/module-01.md"
+          ],
+          "skills": ["django", "mtv"]
+        },
+        "module-02": {
+          "title": "Models and Database",
+          "kbPaths": [
+            "kb/course-09-django-application-development-with-sql-and-databases/modules/module-02.md"
+          ],
+          "skills": ["orm", "sql"]
+        }
+      }
+    },
+    {
+      "courseId": "course-10",
+      "title": "Introduction to Containers: Docker, Kubernetes, and OpenShift",
+      "skills": ["docker", "kubernetes", "openshift", "containers"],
+      "modules": {
+        "module-01": {
+          "title": "Docker Basics",
+          "kbPaths": [
+            "kb/course-10-introduction-to-containers-docker-kubernetes-openshift/modules/module-01.md"
+          ],
+          "skills": ["docker"]
+        },
+        "module-02": {
+          "title": "Kubernetes",
+          "kbPaths": [
+            "kb/course-10-introduction-to-containers-docker-kubernetes-openshift/modules/module-02.md"
+          ],
+          "skills": ["kubernetes"]
+        }
+      }
+    },
+    {
+      "courseId": "course-11",
+      "title": "Application Development using Microservices and Serverless",
+      "skills": ["microservices", "serverless", "api-gateway"],
+      "modules": {
+        "module-01": {
+          "title": "Microservices Architecture",
+          "kbPaths": [
+            "kb/course-11-application-development-using-microservices-and-serverless/modules/module-01.md"
+          ],
+          "skills": ["microservices"]
+        }
+      }
+    },
+    {
+      "courseId": "course-12",
+      "title": "Full-Stack Application Development Capstone Project",
+      "skills": ["django", "react", "docker", "kubernetes", "authentication", "rest-api"],
+      "modules": {
+        "module-01": {
+          "title": "Project Architecture and Setup",
+          "kbPaths": [
+            "kb/course-12-full-stack-application-development-capstone-project/modules/module-01.md",
+            "kb/course-12-full-stack-application-development-capstone-project/cheatsheets/commands.md"
+          ],
+          "skills": ["git", "django", "react"],
+          "labs": ["kb/course-12-full-stack-application-development-capstone-project/labs/lab-index.md#Lab-1-1"]
+        },
+        "module-02": {
+          "title": "Backend API Development",
+          "kbPaths": [
+            "kb/course-12-full-stack-application-development-capstone-project/modules/module-02.md",
+            "kb/course-12-full-stack-application-development-capstone-project/cheatsheets/patterns.md"
+          ],
+          "skills": ["django", "rest-api", "orm"],
+          "labs": ["kb/course-12-full-stack-application-development-capstone-project/labs/lab-index.md#Lab-2-1"]
+        },
+        "module-03": {
+          "title": "Frontend Development with React",
+          "kbPaths": [
+            "kb/course-12-full-stack-application-development-capstone-project/modules/module-03.md"
+          ],
+          "skills": ["react", "hooks", "routing"],
+          "labs": ["kb/course-12-full-stack-application-development-capstone-project/labs/lab-index.md#Lab-3-1"]
+        },
+        "module-04": {
+          "title": "User Authentication System",
+          "kbPaths": [
+            "kb/course-12-full-stack-application-development-capstone-project/modules/module-04.md"
+          ],
+          "skills": ["authentication", "security", "django"],
+          "labs": ["kb/course-12-full-stack-application-development-capstone-project/labs/lab-index.md#Lab-4-1"]
+        },
+        "module-05": {
+          "title": "Deployment and CI/CD",
+          "kbPaths": [
+            "kb/course-12-full-stack-application-development-capstone-project/modules/module-05.md"
+          ],
+          "skills": ["docker", "kubernetes", "ci-cd"],
+          "labs": ["kb/course-12-full-stack-application-development-capstone-project/labs/lab-index.md#Lab-5-1"]
+        }
+      }
+    }
+  ]
+}

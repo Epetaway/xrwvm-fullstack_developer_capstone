@@ -1,0 +1,27 @@
+{
+  "skill": "react",
+  "difficulty": "beginner",
+  "questions": [
+    {
+      "id": "react-001",
+      "question": "What is React and why is it used?",
+      "answer": "React is a JavaScript library for building user interfaces, particularly single-page applications. It's used because it allows developers to create reusable UI components, efficiently updates the DOM through a virtual DOM, and provides a declarative way to build interfaces. React's component-based architecture makes code more maintainable and scalable.",
+      "source": "kb/course-05-developing-front-end-apps-with-react/modules/module-01.md#What-is-React",
+      "tags": ["react", "frontend", "basics"]
+    },
+    {
+      "id": "react-002",
+      "question": "What are React hooks?",
+      "answer": "Hooks are functions that let you use state and other React features in functional components. Common hooks include useState (for state management), useEffect (for side effects), useContext (for context API), and useRef (for DOM references). Hooks were introduced in React 16.8 to simplify component logic and enable better code reuse.",
+      "source": "kb/course-12-full-stack-application-development-capstone-project/modules/module-03.md#React-Hooks",
+      "tags": ["react", "hooks", "state-management"]
+    },
+    {
+      "id": "react-003",
+      "question": "Explain the difference between props and state in React.",
+      "answer": "Props (properties) are read-only data passed from parent to child components, while state is mutable data managed within a component. Props flow down the component tree and cannot be modified by the receiving component. State can be updated using setState (class) or useState hook (functional components), triggering re-renders.",
+      "source": "kb/course-05-developing-front-end-apps-with-react/modules/module-02.md#Props-vs-State",
+      "tags": ["react", "props", "state", "fundamentals"]
+    }
+  ]
+}

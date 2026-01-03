@@ -1,0 +1,98 @@
+version: '3.8'
+
+services:
+  # PostgreSQL with pgvector extension for vector similarity search
+  db:
+    image: ankane/pgvector:latest
+    container_name: career-ai-db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-career_ai}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./apps/api/sql/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - career-ai-network
+
+  # API service (Express.js with RAG endpoints)
+  api:
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile
+    container_name: career-ai-api
+    environment:
+      NODE_ENV: ${NODE_ENV:-development}
+      DATABASE_URL: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@db:5432/${POSTGRES_DB:-career_ai}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      PORT: 3001
+    ports:
+      - "3001:3001"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./apps/api:/app
+      - /app/node_modules
+      - ./kb:/kb:ro
+    networks:
+      - career-ai-network
+    command: npm run dev
+
+  # Worker service (KB ingestion and embeddings)
+  worker:
+    build:
+      context: ./apps/worker
+      dockerfile: Dockerfile
+    container_name: career-ai-worker
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@db:5432/${POSTGRES_DB:-career_ai}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      KB_ROOT: /kb
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./apps/worker:/app
+      - /app/node_modules
+      - ./kb:/kb:ro
+      - ./data:/data:ro
+    networks:
+      - career-ai-network
+    command: npm run dev
+
+  # Web UI (Next.js)
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    container_name: career-ai-web
+    environment:
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:3001}
+      NODE_ENV: ${NODE_ENV:-development}
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+    volumes:
+      - ./apps/web:/app
+      - /app/node_modules
+      - /app/.next
+    networks:
+      - career-ai-network
+    command: npm run dev
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  career-ai-network:
+    driver: bridge
